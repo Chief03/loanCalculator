@@ -26,14 +26,14 @@ cd loan-calculator
 # Build & Package
 With Maven
 ```
-bash
+# bash
 # Download dependencies, compile, run tests, and build a fat JAR
 mvn clean package
 ```
 # After this completes, you’ll find your runnable JAR in:
 
 ```
-bash
+# bash
 target/loan-calculator-1.0.0.jar
 ```
 
@@ -41,11 +41,36 @@ With Gradle
 If you prefer Gradle, we’ve included a build.gradle—just run:
 
 ```
-bash
+# bash
 ./gradlew clean build
 ```
 Your JAR will land in:
 ```
-bash
+# bash
 build/libs/loan-calculator-1.0.0.jar
 ```
+
+Run the App
+```
+# bash
+java -jar target/loan-calculator-1.0.0.jar
+```
+
+or (if using Gradle)
+```
+# bash
+java -jar build/libs/loan-calculator-1.0.0.jar
+```
+Once it starts, you’ll see prompts like:
+
+```
+#java
+Enter loan principal (or 'quit'):
+Enter annual rate (%)      :
+Enter term (years)         :
+→ Monthly payment: $536.82
+→ Total interest: $93 255.20
+```
+Type quit at any prompt to exit.
+
+
