@@ -17,7 +17,7 @@ Open your terminal and run:
 
 ```bash
 # 1. Clone the repo
-git clone https://github.com/<your-username>/loan-calculator.git
+git clone https://github.com/Chief03/loan-calculator.git
 
 # 2. Change into the project directory
 cd loan-calculator
